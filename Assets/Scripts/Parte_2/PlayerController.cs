@@ -51,14 +51,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Q))
         {
 
-            transform.Rotate(Vector3.down *Time.deltaTime*speed_move);
+            transform.Rotate(Vector3.down *Time.deltaTime*speed_rotar);
 
         }
 
         if (Input.GetKey(KeyCode.E) )
         {
 
-            transform.Rotate(Vector3.up * Time.deltaTime * speed_move);
+            transform.Rotate(Vector3.up * Time.deltaTime * speed_rotar);
 
         }
 
@@ -91,13 +91,13 @@ public class PlayerController : MonoBehaviour
 
 
 
-        currentframePos = transform.position;   
+        //currentframePos = transform.position;   
 
-        Quaternion rotation = Quaternion.LookRotation(currentframePos-lastframePos);
+        //Quaternion rotation = Quaternion.LookRotation(currentframePos-lastframePos);
 
-        lastframePos = currentframePos;
+        //lastframePos = currentframePos;
 
-        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, 0.1f);
+        //transform.rotation = Quaternion.Lerp(transform.rotation, rotation, 0.1f);
 
 
 
